@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:id="@+id/toolbar_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:background="@color/colorPrimaryDark"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_settings"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/colorPrimary"
+            app:titleTextColor="@color/colorText"
+            android:elevation="8dp"
+            />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/customIP"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="48dp"
+        android:drawableRight="@drawable/ic_next"
+        android:drawablePadding="10dp"
+        android:gravity="left|center"
+        android:text="自定义域名/IP"
+        android:textSize="16sp"
+        android:paddingLeft="15dp"
+        android:textColor="@color/black"
+        android:background="@drawable/score_query_button_selector"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorDivision"
+        />
+
+    <TextView
+        android:id="@+id/update"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:drawableRight="@drawable/ic_next"
+        android:drawablePadding="10dp"
+        android:gravity="left|center"
+        android:text="查看最新版本"
+        android:textSize="16sp"
+        android:paddingLeft="15dp"
+        android:textColor="@color/black"
+        android:background="@drawable/score_query_button_selector"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorDivision"
+        />
+
+    <TextView
+        android:id="@+id/about_software"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:drawableRight="@drawable/ic_next"
+        android:gravity="left|center"
+        android:text="关于"
+        android:textSize="16sp"
+        android:paddingLeft="15dp"
+        android:textColor="@color/black"
+        android:background="@drawable/score_query_button_selector"/>
+</LinearLayout>

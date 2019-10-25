@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">桂电课程表</string>
+    <string name="use_info">使用说明：\n本功能为应对学校网络域名或ip更换时使用， 请输入可以使用的域名。\n\n最新可用域名/IP请在“查看最新版本”页面中查看。</string>
+>
+</resources>

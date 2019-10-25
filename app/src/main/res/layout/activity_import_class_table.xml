@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:background="@color/colorPrimaryDark"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_info"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/colorPrimary"
+            app:titleTextColor="@color/colorText"
+            app:titleMarginStart="20dp"
+            />
+    </FrameLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/student_info_show"
+        android:layout_below="@id/toolbar_info"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/score_query_button_selector"
+        >
+
+        <ImageView
+            android:src="@drawable/ic_head"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textview_student_name_importclass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#000"
+                />
+
+            <TextView
+                android:id="@+id/textview_student_id_imortclass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorText"
+        android:padding="30dp"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+
+            <com.fxl.guetcoursetable.corsetable.WheelView
+                android:id="@+id/term_select_year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                >
+
+            </com.fxl.guetcoursetable.corsetable.WheelView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+
+            <com.fxl.guetcoursetable.corsetable.WheelView
+                android:id="@+id/term_select_part"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                >
+            </com.fxl.guetcoursetable.corsetable.WheelView>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorText"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+
+            android:textSize="17sp"
+            android:text="当前周数:"/>
+
+        <Spinner
+            android:id="@+id/import_class_weeknum_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:entries="@array/week_num"
+            android:popupBackground="@color/colorText"
+            />
+
+    </LinearLayout>
+
+
+    <android.support.percent.PercentFrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <Button
+
+            android:textColor="@color/colorText"
+            android:id="@+id/logout_btn"
+            android:layout_gravity="left|center_vertical"
+            app:layout_widthPercent="40%"
+            android:layout_height="50dp"
+            android:text="退出登录"
+            android:layout_marginLeft="20dp"/>
+
+        <Button
+            android:id="@+id/import_class_btn"
+            android:background="@drawable/login_button_background"
+            android:layout_gravity="right|center_vertical"
+            app:layout_widthPercent="40%"
+            android:layout_height="40dp"
+            android:textColor="@color/colorText"
+            android:text="立即导入"
+            android:layout_marginRight="20dp"/>
+    </android.support.percent.PercentFrameLayout>
+
+</LinearLayout>

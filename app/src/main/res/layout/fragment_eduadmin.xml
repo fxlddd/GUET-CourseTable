@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    >
+
+
+    <com.arlib.floatingsearchview.FloatingSearchView
+        android:id="@+id/floating_search_view"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:floatingSearch_searchHint="图书任意词检索..."
+        app:floatingSearch_showSearchKey="false"
+        app:floatingSearch_leftActionMode="showHome"
+        app:floatingSearch_close_search_on_keyboard_dismiss="true"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/student_info_show"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/score_query_button_selector"
+        >
+
+        <ImageView
+            android:src="@drawable/ic_head"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textview_student_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#000"
+                />
+
+            <TextView
+                android:id="@+id/textview_student_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/score_query"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:drawablePadding="15dp"
+        android:drawableStart="@drawable/score"
+        android:drawableLeft="@drawable/score"
+        android:layout_height="48dp"
+        android:gravity="left|center"
+        android:text="成绩"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:paddingLeft="15dp"
+        android:background="@drawable/score_query_button_selector"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorDivision"
+        />
+
+    <TextView
+        android:id="@+id/btn_credit_grade_query"
+        android:layout_width="match_parent"
+        android:drawablePadding="15dp"
+        android:drawableStart="@drawable/ic_credit_grade"
+        android:drawableLeft="@drawable/ic_credit_grade"
+        android:layout_height="48dp"
+        android:gravity="left|center"
+        android:text="学分绩"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:paddingLeft="15dp"
+        android:background="@drawable/score_query_button_selector"/>
+
+
+
+    <TextView
+        android:id="@+id/test_query"
+        android:layout_width="match_parent"
+        android:drawablePadding="15dp"
+        android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/test"
+        android:drawableLeft="@drawable/test"
+        android:layout_height="48dp"
+        android:gravity="left|center"
+        android:text="考试安排"
+        android:textSize="16sp"
+        android:paddingLeft="15dp"
+        android:textColor="@color/black"
+        android:background="@drawable/score_query_button_selector"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorDivision"
+        />
+
+    <TextView
+        android:id="@+id/btn_ping_jiao"
+        android:layout_width="match_parent"
+        android:drawablePadding="15dp"
+        android:drawableStart="@drawable/ic_pingjiao"
+        android:drawableLeft="@drawable/ic_pingjiao"
+        android:layout_height="48dp"
+        android:gravity="left|center"
+        android:text="快速评教"
+        android:textSize="16sp"
+        android:paddingLeft="15dp"
+        android:textColor="@color/black"
+        android:background="@drawable/score_query_button_selector"/>
+
+    <TextView
+        android:id="@+id/book_query"
+        android:layout_width="match_parent"
+        android:drawablePadding="15dp"
+        android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/ic_libeary"
+        android:drawableLeft="@drawable/ic_libeary"
+        android:layout_height="48dp"
+        android:gravity="left|center"
+        android:text="图书馆藏"
+        android:textSize="16sp"
+        android:paddingLeft="15dp"
+        android:textColor="@color/black"
+        android:background="@drawable/score_query_button_selector"/>
+
+    <TextView
+        android:id="@+id/setting"
+        android:layout_width="match_parent"
+        android:drawablePadding="15dp"
+        android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/ic_setting"
+        android:drawableLeft="@drawable/ic_setting"
+        android:layout_height="48dp"
+        android:gravity="left|center"
+        android:text="设置"
+        android:textSize="16sp"
+        android:paddingLeft="15dp"
+        android:textColor="@color/black"
+        android:background="@drawable/score_query_button_selector"/>
+
+
+
+
+
+
+
+</LinearLayout>

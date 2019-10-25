@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:weightSum="1">
+
+    <FrameLayout
+        android:id="@+id/toolbar_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:background="@color/colorPrimaryDark"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_login"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/colorPrimary"
+            app:titleTextColor="@color/colorText"
+
+            />
+
+    </FrameLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="桂电课程表"
+        android:textSize="25sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请使用学生教务系统账号登录。"
+        android:textSize="18sp"
+        android:layout_marginLeft="30dp"
+        />
+
+    <TextView
+        android:id="@+id/warn_info"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="30dp"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+      <!--  <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学 号:"/>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:background="@drawable/daily_course_detail_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="学号:"/>
+
+            <EditText
+                android:id="@+id/user_name"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_height="38dp"
+                android:background="@drawable/daily_course_detail_bg"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/daily_course_detail_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="密码:"/>
+
+            <EditText
+                android:id="@+id/possword"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_height="38dp"
+                android:imeOptions="flagNoEnterAction"
+                android:background="@drawable/daily_course_detail_bg"
+
+               />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/remember_passwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:checked="true"
+            android:visibility="gone"
+            android:text="记住密码"/>
+
+        <android.support.percent.PercentFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <Button
+                android:id="@+id/cancel_login"
+                android:layout_gravity="left|center_vertical"
+                app:layout_widthPercent="40%"
+                android:layout_height="50dp"
+                android:textColor="@color/colorText"
+
+                android:text="取消"
+                android:layout_marginLeft="35dp"/>
+
+            <Button
+                android:id="@+id/login"
+                android:layout_gravity="right|center_vertical"
+                app:layout_widthPercent="40%"
+                android:layout_height="40dp"
+                android:background="@drawable/login_button_background"
+                android:textColor="@color/colorText"
+                android:text="确定"
+                android:layout_marginRight="35dp"/>
+        </android.support.percent.PercentFrameLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

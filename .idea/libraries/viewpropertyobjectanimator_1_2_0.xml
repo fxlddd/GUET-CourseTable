@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="viewpropertyobjectanimator-1.2.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/viewpropertyobjectanimator-1.2.0.aar/6cd75207f0bc002596b61f858b119f2e/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/viewpropertyobjectanimator-1.2.0.aar/6cd75207f0bc002596b61f858b119f2e/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.bartoszlipinski/viewpropertyobjectanimator/1.2.0/82e44856a63256bcda0ab276de66d0642143e941/viewpropertyobjectanimator-1.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

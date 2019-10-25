@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:background="@color/colorPrimaryDark"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_credit_grade"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/colorPrimary"
+            app:titleTextColor="@color/colorText"
+            app:titleMarginStart="20dp"
+            />
+
+    </FrameLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/textview_crditgrade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="100.00"
+        android:textSize="48sp"
+        android:layout_margin="100dp"
+        android:gravity="center"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom">
+
+
+        <Button
+            android:id="@+id/btn_credit_grade_query_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="入学至今"
+            android:background="@drawable/score_query_button_selector"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorDivision"
+            />
+
+        <Button
+            android:id="@+id/btn_credit_grade_query_dayi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="大一"
+            android:background="@drawable/score_query_button_selector"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorDivision"
+            />
+
+        <Button
+            android:id="@+id/btn_credit_grade_query_daer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/score_query_button_selector"
+
+            android:text="大二"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorDivision"
+            />
+
+        <Button
+            android:id="@+id/btn_credit_grade_query_dasan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/score_query_button_selector"
+            android:text="大三"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorDivision"
+            />
+
+        <Button
+            android:id="@+id/btn_credit_grade_query_dasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/score_query_button_selector"
+            android:text="大四"/>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
